@@ -1,0 +1,21 @@
+@import 'src/assets/shadow.scss';
+$elevation : 1;
+$default-grow : 1;
+$margin: 32px;
+:host{
+    @include BoxShadow($elevation);
+    border-radius: 3px;
+    flex: $default-grow;
+    &.no-shadow{
+        @include BoxShadow(0);
+    }
+}
+:host-context(app-section-row):not(:last-child){
+    margin-right: $margin;
+}
+:host-context(app-section-column){
+    &:not(:last-child){
+        margin-bottom: $margin;
+    }
+    width: 100%;
+}

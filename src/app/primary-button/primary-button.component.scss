@@ -1,0 +1,22 @@
+:host{
+    display: block;
+    div{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 5px;
+        button{
+            height: 28px;
+            width: 70px;
+            border-radius: 100px;
+            border: none;
+            background-color: #F25B74;
+            color: white;
+            font-size: 13px;
+            .icon{
+                margin-right: 5px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,31 @@
+:host{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+    .profile__img{
+        margin-left: 25px;
+        display: inline-block;
+        max-width: 150px;
+        &-img{
+            width: 100%;
+        }
+    }
+    .profile__info{
+        margin-left: 30px;
+        display: inline-block;
+        width: 100%;
+        padding-left: 36px;
+        box-sizing: border-box;
+        &-title{
+            color: #F94E7B;
+        }
+        &-subtitles{
+            display: block;
+            color: black;
+        }
+        &-icon{
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+$margin : 32px;
+$elevation : 1;
+$default-grow : 1;
+
+:host{
+    flex-grow: $default-grow;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}

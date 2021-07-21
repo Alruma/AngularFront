@@ -13,8 +13,8 @@ import { NavbarButtonComponent } from './navbar-button/navbar-button.component';
 import { PrimaryButtonComponent } from './primary-button/primary-button.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ChipsComponent } from './chips/chips.component';
 import {MatChipsModule} from '@angular/material/chips';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,13 +29,11 @@ import {MatChipsModule} from '@angular/material/chips';
     NavbarButtonComponent,
     PrimaryButtonComponent,
     ActivitiesComponent,
-    ChipsComponent,
-
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatChipsModule
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

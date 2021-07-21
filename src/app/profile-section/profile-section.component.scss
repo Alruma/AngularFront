@@ -1,12 +1,19 @@
+@import "src/styles.scss";
+
 :host{
     width: 100%;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     box-sizing: border-box;
+    padding-top: $DEFAULTMARGIN;
+    padding-right: $DEFAULTMARGIN;
+    padding-left: $DEFAULTMARGIN;
+
     .header{
         width: 100%;
         display:flex;
         flex-flow: column;
+        padding-left: 0;
         .profile__img{
             width: 150px;
         }
@@ -14,11 +21,11 @@
             width: 100%;
             display: flex;
             flex-flow: row;
-            margin-left: 32px;
             width: 100%;
             box-sizing: border-box;
             .profile__description{
                 width: 100%;
+                margin-left: $DEFAULTMARGIN;
                 &-title{
                     color: #F94E7B;
                 }
@@ -30,14 +37,68 @@
                     margin-right: 5px;
                 }
             }
+            .profile__image-div{
+                border: 1px solid black;
+                border-radius: 50%;
+            }
         }
-        &__footer{
+        mat-chip{
+            background-color: white;
+            border: 1px solid #E9EFF8;
+            user-select: none;
+        }
+        .buttons{
+            box-sizing: border-box;
             width: 100%;
             display: flex;
             flex-direction: row-reverse;
+            margin-bottom: $DEFAULTMARGIN;
+            padding-right: $DEFAULTMARGIN;
         }
-        .footer-chips{
-            width: 100%;
+    }
+    .form{
+        display: flex;
+        flex-flow: column;
+        box-sizing: border-box;
+        width: 100%;
+        height: 500px;
+        overflow-y: auto;
+        padding-right: $DEFAULTMARGIN;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        &__label{
+            margin-bottom: 4px;
+            color: grey;
+        }
+        &__input{
+            margin-bottom: 20px;
+            border: none;
+            border-bottom : 1px solid black;
+        }
+        &__title{
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+    }
+    app-primary-button{
+        align-self: center;
+        margin-bottom: $DEFAULTMARGIN;
+    }
+
+    ::-webkit-scrollbar {
+        border-radius: 90px;
+        background-color: white;
+        width: 10px;
+        &-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        &-thumb {
+            background: grey; 
+            border-radius: 10px;
+            &:hover {
+                background: #F94E7B; 
+            }
         }
     }
 }

@@ -19,6 +19,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon'
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { Pagina1Component } from './pagina1/pagina1.component';
+import { Pagina2Component } from './pagina2/pagina2.component';
+import { CardComponent } from './card/card.component';
+import { ContactsCardComponent } from './contacts-card/contacts-card.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     NavbarButtonComponent,
     PrimaryButtonComponent,
     ActivitiesComponent,
+    Pagina1Component,
+    Pagina2Component,
+    CardComponent,
+    ContactsCardComponent,
   ],
   imports: [
     BrowserModule,

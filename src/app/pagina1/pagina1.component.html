@@ -1,0 +1,65 @@
+<div class="root">
+    <app-section-row>
+      <app-section>
+        <app-profile-section
+        title="Madrid Destino Cultura, Turismo"
+        FormTitle="About this Account"
+        img="assets/Greenville_round_living_black.p1.png"
+        ProfilePhone2="Unknown"
+        ProfilePhone1 ="999 999 999"
+        ProfileEmail ="No Email"
+        ></app-profile-section>
+      </app-section>
+      <app-section>
+        <app-navbar>
+          <app-navbar-button>Notes</app-navbar-button>
+          <app-navbar-button>Activities</app-navbar-button>
+        </app-navbar>
+        <app-notes>
+          <app-primary-button>
+            <mat-icon>add</mat-icon>
+            <span>Notes</span>
+          </app-primary-button>
+        </app-notes>
+      </app-section>
+      <app-section [shadowless]="true">
+        <app-section-column>
+          <app-section>
+            <app-contacts>
+              <app-contacts-card
+              cardTitle="Sergio Peña"
+              cardNumber="999 999 999"
+              occupation="Frontend Developer"
+              email="sergio.pena@bosonit.com"
+              phoneNumber="999 999 999"
+              manager="diego.tobalina@bosonit.com"
+              imgSource="https://generated.photos/vue-static/home/hero/6.png"
+              ></app-contacts-card>
+            </app-contacts>
+          </app-section>
+          <app-section>
+            <app-oportunities oportunities=3>
+              <app-card
+              status="Pendiente de enviar a cliente"
+              gaugeValue="70"
+              cardTitle="Angular"
+              priority="Normal Priority"
+              ></app-card>
+              <app-card
+              status="Pendiente de enviar a cliente"
+              gaugeValue="30"
+              cardTitle="JavaScript"
+              priority="Normal Priority"
+              ></app-card>
+              <app-card
+              status="Pendiente de enviar a cliente"
+              gaugeValue="43"
+              cardTitle="Typescript"
+              priority="Normal Priority"
+              ></app-card>
+            </app-oportunities>
+          </app-section>
+        </app-section-column>
+      </app-section>
+    </app-section-row>
+  </div>

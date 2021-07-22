@@ -1,0 +1,49 @@
+<div class="root">
+  <app-section-row>
+    <app-section>
+      <app-profile-section 
+      title="Sergio Peña" 
+      FormTitle="About Contact"
+      img="https://generated.photos/vue-static/home/hero/6.png"
+      ProfileEmail="sergio.pena@bosonit.com"
+      ProfilePhone1="999 999 999"
+      ProfilePhone2="Unknown"
+      >
+      </app-profile-section>
+    </app-section>
+    <app-section>
+      <app-navbar>
+        <app-navbar-button>Notes</app-navbar-button>
+        <app-navbar-button>Activities</app-navbar-button>
+      </app-navbar>
+      <app-notes>
+        <app-primary-button>
+          <mat-icon>add</mat-icon>
+          <span>Notes</span>
+        </app-primary-button>
+      </app-notes>
+    </app-section>
+    <app-section [shadowless]="true">
+      <app-section-column>
+        <app-section>
+          <app-contacts>
+            <app-contacts-card
+            cardTitle="Madrid Destino Cultura"
+            email="No Email"
+            occupation="Adm. Pública"
+            phoneNumber="No phone"
+            corporates="Corporates"
+            manager="diego.tobalina@bosonit.com"
+            imgSource="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png"
+            ></app-contacts-card>
+          </app-contacts>
+        </app-section>
+        <app-section>
+          <app-oportunities
+          oportunities=0
+          ></app-oportunities>
+        </app-section>
+      </app-section-column>
+    </app-section>
+  </app-section-row>
+</div>

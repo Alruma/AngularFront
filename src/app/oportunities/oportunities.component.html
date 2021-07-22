@@ -1,114 +1,11 @@
 <div class="header">
-    <h2 class="header-title">3 Opportunities</h2>
+    <h2 class="header-title">{{oportunities}} Opportunities</h2>
     <app-primary-button class="header-button">
         <mat-icon class="header-icon" aria-hidden="false" aria-label="add icon">add</mat-icon>
         <span>Add</span>
     </app-primary-button>
 </div>
+
 <div class="cards__section">
-
-    <mat-card class="card">
-        <mat-card-content class="card__content">
-            <div class="card__content-info">
-                <mat-card-title class="card__content-title">Desarrollo Angular 6 meses</mat-card-title>
-                <mat-card-subtitle>Warning: 4/7/21, 12:00 AM</mat-card-subtitle>
-                <mat-card-subtitle>Close: 4/7/21, 12:00 AM</mat-card-subtitle>
-            </div>
-            <div class="card__content-gauge">
-                <mat-progress-spinner value="70"></mat-progress-spinner>
-            </div>
-        </mat-card-content>
-        <div class="content__priority">
-            <span>Pendiente enviar a cliente</span>
-            <span class="content__priority-info">
-                <mat-icon class="content__priority-icon">fiber_manual_record</mat-icon>
-                <span>Normal Priority</span>
-            </span>
-        </div>
-
-        <mat-card-footer class="card__footer">
-            <div class="card__footer-pinfo">
-                <span>
-                    6000
-                </span>
-            <mat-icon class="card__footer-pinfo-icon" aria-hidden="false" aria-label="add icon">euro_symbol</mat-icon>
-            </div>
-            <div class="card__footer-pinfo">
-                <mat-icon class="card__footer-pinfo-icon" aria-hidden="false" aria-label="add icon">person</mat-icon>
-                <span>
-                    diego.tobalina@bosonit.com
-                </span>
-            </div>
-        </mat-card-footer>
-    </mat-card>
-
-    <mat-card class="card">
-        <mat-card-content class="card__content">
-            <div class="card__content-info">
-                <mat-card-title class="card__content-title">Desarrollo Angular 6 meses</mat-card-title>
-                <mat-card-subtitle>Warning: 4/7/21, 12:00 AM</mat-card-subtitle>
-                <mat-card-subtitle>Close: 4/7/21, 12:00 AM</mat-card-subtitle>
-            </div>
-            <div class="card__content-gauge">
-                <mat-progress-spinner value="54"></mat-progress-spinner>
-            </div>
-        </mat-card-content>
-        <div class="content__priority">
-            <span>Pendiente enviar a cliente</span>
-
-            <span class="content__priority-info">
-                <mat-icon class="content__priority-icon">fiber_manual_record</mat-icon>
-                <span>Normal Priority</span>
-            </span>
-        </div>
-
-        <mat-card-footer class="card__footer">
-            <div class="card__footer-pinfo">
-                <span>
-                    6000
-                </span>
-            <mat-icon class="card__footer-pinfo-icon" aria-hidden="false" aria-label="add icon">euro_symbol</mat-icon>
-            </div>
-            <div class="card__footer-pinfo">
-                <mat-icon class="card__footer-pinfo-icon" aria-hidden="false" aria-label="add icon">person</mat-icon>
-                <span>
-                    diego.tobalina@bosonit.com
-                </span>
-            </div>
-        </mat-card-footer>
-    </mat-card>
-    <mat-card class="card">
-        <mat-card-content class="card__content">
-            <div class="card__content-info">
-                <mat-card-title class="card__content-title">Desarrollo Angular 6 meses</mat-card-title>
-                <mat-card-subtitle>Warning: 4/7/21, 12:00 AM</mat-card-subtitle>
-                <mat-card-subtitle>Close: 4/7/21, 12:00 AM</mat-card-subtitle>
-            </div>
-            <div class="card__content-gauge">
-                <mat-progress-spinner value="30"></mat-progress-spinner>
-            </div>
-        </mat-card-content>
-        <div class="content__priority">
-            <span>Pendiente enviar a cliente</span>
-            <span class="content__priority-info">
-                <mat-icon class="content__priority-icon">fiber_manual_record</mat-icon>
-                <span>Normal Priority</span>
-            </span>
-        </div>
-
-        <mat-card-footer class="card__footer">
-            <div class="card__footer-pinfo">
-                <span>
-                    6000
-                </span>
-            <mat-icon class="card__footer-pinfo-icon" aria-hidden="false" aria-label="add icon">euro_symbol</mat-icon>
-            </div>
-            <div class="card__footer-pinfo">
-                <mat-icon class="card__footer-pinfo-icon" aria-hidden="false" aria-label="add icon">person</mat-icon>
-                <span>
-                    diego.tobalina@bosonit.com
-                </span>
-            </div>
-        </mat-card-footer>
-    </mat-card>
+<ng-content></ng-content>
 </div>

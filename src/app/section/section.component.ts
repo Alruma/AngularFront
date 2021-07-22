@@ -15,6 +15,4 @@ export class SectionComponent implements OnInit {
       this.hostElement.nativeElement.classList.add('no-shadow');
     }
   }
-
-
 }

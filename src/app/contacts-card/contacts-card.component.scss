@@ -1,0 +1,61 @@
+@import "src/styles.scss";
+:host {
+    width: 100%;
+    padding: $DEFAULTMARGIN;
+    box-sizing: border-box;
+    padding: 32px;
+    width: 100%;
+    .header {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        &-button {
+            margin-right: 20px;
+        }
+        &-title {
+            margin-left: 20px;
+        }
+    }
+    .card {
+        &__subtitle {
+            display: flex;
+            align-items: center;
+            font-style: oblique;
+        }
+        mat-icon {
+            font-size: 20px;
+        }
+        margin: 32px;
+        &__title {
+            color: #f6637a;
+        }
+        &__content {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            &-img {
+                width: 100px;
+            }
+            &-info {
+                margin-left: 20px;
+            }
+        }
+        &__footer {
+            border-top: 1px solid lightgrey;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+
+            &-pinfo {
+                display: flex;
+                align-items: center;
+                span {
+                    font-style: oblique;
+                }
+            }
+        }
+    }
+}

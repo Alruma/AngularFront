@@ -4,8 +4,9 @@
         margin-top: 5px;
         display: flex;
         flex-direction: row-reverse;
-        padding-right: 5px;
         button{
+            padding: 0;
+            box-sizing: border-box;
             height: 28px;
             width: 70px;
             border-radius: 100px;
@@ -13,6 +14,9 @@
             background-color: #F25B74;
             color: white;
             font-size: 13px;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
             .icon{
                 margin-right: 5px;
             }
